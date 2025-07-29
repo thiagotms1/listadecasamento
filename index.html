@@ -1,36 +1,249 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Presentes de Lua de Mel</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif; /* A nice, modern font */
-      }
-      /* You can add custom Tailwind config here if needed, but for simplicity we rely on CDN defaults */
-      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
-      .font-playfair {
-        font-family: 'Playfair Display', serif;
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@^19.1.0",
-    "react/": "https://esm.sh/react@^19.1.0/",
-    "react-dom/client": "https://esm.sh/react-dom@^19.1.0/client",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+    <title>Nossa Lua de Mel dos Sonhos - Thiago & Juliana</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-  <body class="bg-[#F9F0E6]">
-    <noscript>Você precisa habilitar o JavaScript para rodar este aplicativo.</noscript>
-    <div id="root"></div>
-    <script type="module" src="./index.js"></script>
-  <script type="module" src="/index.tsx"></script>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <h1 class="main-title">Nossa Lua de Mel dos Sonhos</h1>
+            <p class="subtitle">Ajude-nos a criar memórias inesquecíveis!</p>
+            <div class="heart-decoration">♥</div>
+        </header>
+
+        <!-- Seção Principal -->
+        <main class="main-content">
+            <section class="experiences-section">
+                <h2 class="section-title">Nossa Lista de Experiências</h2>
+                <p class="section-description">Cada item na lista é um pedacinho do nosso sonho se tornando realidade. Veja as experiências que sonhamos para nossa viagem!</p>
+                
+                <!-- Grid de Experiências -->
+                <div class="experiences-grid">
+                    <div class="experience-card" data-category="Passeios Românticos">
+                        <div class="category-tag romantic">Passeios Românticos</div>
+                        <div class="card-icon">
+                            <img src="passeio_barco.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Passeio de Barco ao Pôr do Sol</h3>
+                        <p class="experience-description">Um romântico passeio de barco para apreciar o pôr do sol e celebrar nosso amor.</p>
+                        <div class="experience-price">R$ 550,00</div>
+                    </div>
+
+                    <div class="experience-card" data-category="Gastronomia">
+                        <div class="category-tag gastronomy">Gastronomia</div>
+                        <div class="card-icon">
+                            <img src="cade_da_manha.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Café da Manhã Especial na Varanda</h3>
+                        <p class="experience-description">Um delicioso café da manhã servido em nossa varanda privativa com vista para o mar.</p>
+                        <div class="experience-price">R$ 280,00</div>
+                    </div>
+
+                    <div class="experience-card" data-category="Gastronomia">
+                        <div class="category-tag gastronomy">Gastronomia</div>
+                        <div class="card-icon">
+                            <img src="jantar_luz_velas.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Jantar à Luz de Velas na Praia</h3>
+                        <p class="experience-description">Uma experiência gastronômica inesquecível com um jantar exclusivo à beira-mar.</p>
+                        <div class="experience-price">R$ 750,00</div>
+                    </div>
+
+                    <div class="experience-card" data-category="Bem-Estar">
+                        <div class="category-tag wellness">Bem-Estar</div>
+                        <div class="card-icon">
+                            <img src="massagem.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Massagem Relaxante para Casal</h3>
+                        <p class="experience-description">Um momento de puro relaxamento e bem-estar com uma massagem especial para nós dois.</p>
+                        <div class="experience-price">R$ 450,00</div>
+                    </div>
+
+                    <div class="experience-card" data-category="Gastronomia">
+                        <div class="category-tag gastronomy">Gastronomia</div>
+                        <div class="card-icon">
+                            <img src="aula_culinaria.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Aula de Culinária Local</h3>
+                        <p class="experience-description">Aprender os segredos da culinária local juntos e levar novas receitas para casa.</p>
+                        <div class="experience-price">R$ 320,00</div>
+                    </div>
+   
+                      <div class="experience-card" data-category="Diversão">
+                        <div class="category-tag adventure">Diversão</div>
+                        <div class="card-icon">
+                            <img src="netflix.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Contribuição para o fundo Netflix and Chill</h3>
+                        <p class="experience-description">Ajude-nos a ter noites de filmes, pipoca e muito carinho.</p>
+                        <div class="experience-price">R$ 100,00</div>
+                    </div>
+                    
+
+                    <div class="experience-card" data-category="Conforto">
+                        <div class="category-tag adventure">Conforto</div>
+                        <div class="card-icon">
+                            <img src="cobertor.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Cobertor para a noiva que está coberta de razão</h3>
+                        <p class="experience-description">Um cobertor quentinho para lembrar que ela está SEMPRE certa.</p>
+                        <div class="experience-price">R$ 120,00</div>
+                    </div>
+                    
+
+                    <div class="experience-card" data-category="Educação">
+                        <div class="category-tag adventure">Educação</div>
+                        <div class="card-icon">
+                            <img src="certificado.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Curso intensivo de 'Sim, amor' com certificado incluso</h3>
+                        <p class="experience-description">Treinamento oficial para respostas rápidas e sábias.</p>
+                        <div class="experience-price">R$ 97,00</div>
+                    </div>
+            
+                    <div class="experience-card" data-category="Serviço">
+                        <div class="category-tag adventure">Serviço</div>
+                        <div class="card-icon">
+                            <img src="cuidar_gato.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 350px;">
+                        </div>
+                        <h3 class="experience-title">Vale ‘um final de semana cuidando da casa dos padrinhos’.</h3>
+                        <p class="experience-description">Nós cuidamos de tudo: filho, gato, cachorro e até da samambaia</p>
+                        <div class="experience-price">R$ 300,00</div>
+                    </div>
+
+                    <div class="experience-card" data-category="Cerimônia">
+                        <div class="category-tag adventure">Cerimônia</div>
+                        <div class="card-icon">
+                            <img src="discurso.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Vale ‘um discurso emocionante’ dos noivos</h3>
+                        <p class="experience-description">Prepare os lencinhos para chorar (de rir ou de emoção)..</p>
+                        <div class="experience-price">R$ 250,00</div>
+                    </div>
+   
+                    <div class="experience-card" data-category="Festa">
+                        <div class="category-tag adventure">Festa</div>
+                        <div class="card-icon">
+                            <img src="churrasco.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">O casal topa organizar um churrasco para os amigos</h3>
+                        <p class="experience-description">Carne, pão de alho e muita alegria incluídos.</p>
+                        <div class="experience-price">R$ 100,00</div>
+                    </div>
+   
+                    <div class="experience-card" data-category="Diversão">
+                        <div class="category-tag adventure">Diversão</div>
+                        <div class="card-icon">
+                            <img src="whats.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Contribuição para o casal responder o grupo da família no WhatsApp</h3>
+                        <p class="experience-description">Inclui 3 áudios de 2 min com emoticons carinhosos.</p>
+                        <div class="experience-price">R$ 40,00</div>
+                    </div>
+         
+                    <div class="experience-card" data-category="Diversão">
+                        <div class="category-tag adventure">Diversão</div>
+                        <div class="card-icon">
+                            <img src="tiktok.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">O casal topa fazer um TikTok dançando com os padrinhos</h3>
+                        <p class="experience-description">Com coreografia ensaiada e postagem oficial!.</p>
+                        <div class="experience-price">R$ 80,00</div>
+                    </div>
+
+                    <div class="experience-card" data-category="Diversão">
+                        <div class="category-tag adventure">Diversão</div>
+                        <div class="card-icon">
+                            <img src="cueca.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Cueca sexy para o noivo usar na noite de núpcias</h3>
+                        <p class="experience-description">Para garantir uma lua de mel ainda mais inesquecível..</p>
+                        <div class="experience-price">R$ 35,00</div>
+                    </div>
+            
+                    <div class="experience-card" data-category="Gastronomia">
+                        <div class="category-tag adventure">Gastronomia</div>
+                        <div class="card-icon">
+                            <img src="pizza_noiva.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Pizza da Noiva</h3>
+                        <p class="experience-description">Uma deliciosa pizza artesanal preparada especialmente para a noiva, para uma noite descontraída e romântica.</p>
+                        <div class="experience-price">R$ 120,00</div>
+                    </div>
+
+            
+                    <div class="experience-card" data-category="Aventura">
+                        <div class="category-tag adventure">Aventura</div>
+                        <div class="card-icon">
+                            <img src="mergulho.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Mergulho em Águas Cristalinas</h3>
+                        <p class="experience-description">Explorar a vida marinha e as belezas subaquáticas em um mergulho guiado.</p>
+                        <div class="experience-price">R$ 600,00</div>
+                    </div>
+
+                    <div class="experience-card" data-category="Passeios Românticos">
+                        <div class="category-tag romantic">Passeios Românticos</div>
+                        <div class="card-icon">
+                            <img src="observar_estrelas.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Noite de Observação de Estrelas</h3>
+                        <p class="experience-description">Uma noite mágica observando as estrelas em um local privilegiado, longe das luzes da cidade.</p>
+                        <div class="experience-price">R$ 200,00</div>
+                    </div>
+
+                    <div class="experience-card" data-category="Aventura">
+                        <div class="category-tag adventure">Aventura</div>
+                        <div class="card-icon">
+                            <img src="bike_rental.jpg" alt="Ícone de Mergulho" style="width: 250px; height: 250px;">
+                        </div>
+                        <h3 class="experience-title">Aluguel de Bike para Explorar a Ilha</h3>
+                        <p class="experience-description">Liberdade para explorar os cantinhos escondidos e as paisagens da ilha ao nosso ritmo.</p>
+                        <div class="experience-price">R$ 180,00</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <div class="contact-section">
+                <h3 class="contact-title">Se quiser nos presentear</h3>
+                <div class="pix-info">
+                    <p class="pix-label">Nossa chave Pix é</p>
+                    <p class="pix-key">casamento_thi_ju@hotmail.com</p>
+                </div>
+                <div class="divider">OU</div>
+                <a href="https://sites.icasei.com.br/julianaethiago0709/pages/35662734" target="_blank" rel="noopener noreferrer" class="btn-icasei">Ver lista de presentes no iCasei</a>
+            </div>
+            <div class="footer-signature">
+                <p class="signature-text">Feito com ❤️ para nossa jornada juntos.</p>
+                <p class="copyright">Thiago & Juliana © 2025</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal/Popup de Agradecimento -->
+    <div class="modal hidden" id="thankYouModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">Muito obrigado pelo presente!</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal-text">Nossa chave Pix é:</p>
+                <p class="modal-pix-key">casamento_thi_ju@hotmail.com</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn--primary modal-close-btn" id="modalOkBtn">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
